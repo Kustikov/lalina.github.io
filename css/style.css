@@ -1,0 +1,325 @@
+
+/*Иконочный шрифт*/
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'symbols-nerds';
+  src: url('../fonts/font/symbols-nerds.eot?27841936');
+  src: url('../fonts/font/symbols-nerds.eot?27841936#iefix') format('embedded-opentype'),
+       url('../fonts/font/symbols-nerds.woff?27841936') format('woff'),
+       url('../fonts/font/symbols-nerds.ttf?27841936') format('truetype'),
+       url('../fonts/font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-nerds';
+    src: url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-nerds";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-basket:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-vk:before { content: '\76'; } /* 'v' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-circle:before { content: '\25cb'; } /* '○' */
+.icon-circle-dot:before { content: '\25cf'; } /* '●' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
+
+
+/*Иконочный шрифт*/
+
+
+
+/* цвет фона и рамки навигационного меню */
+.navbar-default {
+    background-color: white;
+    border-color: #27ae60;
+}
+/* цвет текста, содержащий название сайта или бренда */
+.navbar-default .navbar-brand {
+    color: black;
+}
+/* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: white;
+}
+/* ÷вет пунктов навигационного меню */
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+/* ÷вет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #d1ffed;
+}
+/* ÷вет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: blue;
+    background-color: white;
+}
+/* ÷вет и фон открытого пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #d1ffed;
+    background-color: #27ae60;
+}
+/* ÷вет стрелочки (треугольничка) у раскрывающихс¤ пунктов меню */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #ecf0f1;
+    border-bottom-color: #ecf0f1;
+}
+/* ÷вет стрелочки (треугольничка) при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #d1ffed;
+    border-bottom-color: #d1ffed;
+}
+/* ÷вет стрелочки (треугольничка), открывшегос¤ пункта меню */
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #d1ffed;
+    border-bottom-color: #d1ffed;
+}
+/* CSS стили дл¤ мобильных устройств */
+/* ÷вет рамки у кнопки, котора¤ открывает меню */
+.navbar-default .navbar-toggle {
+    border-color: #27ae60;
+}
+/* ÷вет фона кнопки (котора¤ открывает меню) при поднесении к ней курсора мышки или при нахождении еЄ в фокусе */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #27ae60;
+}
+/* ÷вет полосочек в кнопочке, котора¤ открывает меню */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+/* ÷вет пунктов меню в раскрывающихс¤ списках */
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ecf0f1;
+  }
+/* ÷вет и фон пункта меню в раскрывающихс¤ списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #d1ffed;
+        background-color: #27ae60;
+    }
+}
+/* Отступ для меню */
+html {
+font-family: 'Open Sans', sans-serif;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+padding-top: 50px;
+}
+.splash { 
+/* ќтступ до содержимого splash */
+padding:7em 0 2em;
+vertical-align:middle;
+background-image:url(../img/bg.jpg);
+/*ћасштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равн¤лась ширине или высоте блока.*/
+
+/*—войство background-attachment устанавливает, будет ли прокручиватьс¤ фоновое изображение вместе с содержимым элемента.ƒелает фоновое изображение элемента неподвижным. */
+background-attachment:fixed;
+/* ÷вет текста */
+color:#fff;
+/*выравнивание текста по центру */
+text-align:center
+}
+
+article {
+display:block;
+padding: 4em 0 3em;
+border-bottom: 1px solid rgba(0,0,0,0.05);
+background-color: gainsboro;
+}
+
+/* Article */
+
+.yellow-text {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Section main */
+section {
+display:block;
+padding: 4em 0 3em;
+border-bottom: 2px solid rgba(0,0,0,0.05);
+border-top: 2px solid rgba(0,0,0,0.05);
+background-color: gainsboro;
+}
+
+.spb-history  {
+    display: block;
+    background-color: ghostwhite;
+    border-radius:20px; 
+        -webkit-border-radius:20px; 
+        -moz-border-radius:20px; 
+        -khtml-border-radius:20px;
+    
+}
+.spb-history p {
+    font-size: 24px;
+    color: black;
+    font-kerning: normal;
+    font-stretch: extra-expanded;
+    font-weight: normal;
+}
+/* Футер */
+.footer-custom {
+	background-color: gray;
+	
+}
+a.footer_link {
+    color: yellow;
+}
+
+}
+.container-footer {
+    margin-top: 15px;
+}
+
+.social {
+    font-size: 23px;
+    word-spacing: 28px;
+     vertical-align: bottom;
+}
+
+.btn-social {
+    display: inline-block;
+    width:60px;
+    height:60px;
+    background-color: dimgray;
+    text-align: center; 
+    -moz-border-radius: 31px;
+    -webkit-border-radius: 31px; 
+    -khtml-border-radius:31px; 
+    border-radius: 31px;
+    
+}
+
+.btn-social i {
+    display: inline-block;
+    color: yellow;
+    vertical-align: middle;
+    margin-top: 16px;
+   
+
+}
+.btn-social:hover {
+    background-color: white;
+}
+.btn-social:active {
+    background-color: gray;
+    box-shadow: inset 0px 2px 0px 0px  grey;
+
+}
+
+/* Хедер */
+
+.title-header {
+    position: relative;
+    font-size: 48px;
+    font-weight: 400;
+    color: yellow;
+    top: -78px;
+    
+    
+   
+    
+}
+
+.title-text {
+    position: relative;
+    font-family: Roboto serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: gainsboro;
+    font-kerning: normal;
+    border-bottom: 2px solid white;
+    top: -115px; 
+}
+
+/* Описание */
+.buro {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+    border: 2px grey solid;
+    padding: 10px;
+      border-radius:20px; 
+        -webkit-border-radius:20px; 
+        -moz-border-radius:20px; 
+        -khtml-border-radius:20px;
+}
+
+/* Услуги */
+.border-black {
+    border: 2px solid black;
+}
+
+td:hover {
+    cursor: pointer;
+    color: dimgray;
+    
+}
+/* Описание услуг */
+.header_lalina {
+   font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    
+}
